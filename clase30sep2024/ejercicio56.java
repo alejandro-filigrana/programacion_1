@@ -19,6 +19,6 @@ public class ejercicio56 {
             }
         }
         System.out.println("aprobados : " + aprobados + noAprobados + noAprobados);
-
+        
     }
 }
