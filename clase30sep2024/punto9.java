@@ -1,6 +1,4 @@
-import java.util.Scanner;
-
-public class  {
+public punto9  {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
         //code
@@ -29,3 +27,6 @@ public class  {
             default:
                 System.out.println("ingrese un articulo valido:");
                 break;
+}
+}
+}

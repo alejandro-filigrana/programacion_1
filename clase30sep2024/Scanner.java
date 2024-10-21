@@ -11,4 +11,14 @@ public class Scanner {
         throw new UnsupportedOperationException("Unimplemented method 'nextInt'");
     }
 
+    public double nextDouble() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'nextDouble'");
+    }
+
+    public String nextLine() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'nextLine'");
+    }
+
 }
