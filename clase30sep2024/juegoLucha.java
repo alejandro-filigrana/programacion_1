@@ -4,12 +4,14 @@ import java.util.Scanner;
 class JuegoLucha {
     private Personaje jugador1;
     private Personaje jugador2;
+    private String arma1;
+    private String arma2;
 
     // constructor para inicializar los personajes
-    public JuegoLucha(String nombre1, String nombre2) {
-        this.jugador1 = new Personaje(nombre1);
-        this.jugador2 = new Personaje(nombre2);
-    }
+    public JuegoLucha(String nombre1, String nombre2, String arma1, String arma2) {
+        this.jugador1 = new Personaje(nombre1, arma1, arma2);
+        this.jugador2 = new Personaje(nombre2, arma2, arma2);
+     }
 
     // metodo para iniciar la peleda
     public void iniciarPelea() {
@@ -45,7 +47,12 @@ class JuegoLucha {
         String nombre1 = scanner.nextLine();
         System.out.print("introduce el nombre del jugador 2: ");
         String nombre2 = scanner.nextLine();
-        JuegoLucha juego = new JuegoLucha(nombre1, nombre2);
+        System.out.print("introduce arma1:");
+        String arma1String = scanner.nextLine();
+        System.out.print("introduce arma2:");
+        String arma2 = scanner.nextLine();
+
+        JuegoLucha juego = new JuegoLucha(nombre1, nombre2, arma2, arma2);
         juego.iniciarPelea();
     }
 }

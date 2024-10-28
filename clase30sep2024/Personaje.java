@@ -3,13 +3,17 @@ import java.util.Scanner;
 
 public class Personaje {
     private String nombre;
+    private String arma1;
+    private String arma2;
     private int puntosDeVida;
     private final int MAX_DANO = 30;
     private final int MIN_DANO = 10;
 
     // Constructor para inicializar los datos del personaje
-    public Personaje(String nombre) {
+    public Personaje(String nombre, String arma1, String arma2) {
         this.nombre = nombre;
+        this.arma1 = arma1;
+        this.arma2 = arma2;
         this.puntosDeVida = 100; // Todos comienzan con 100 puntos de vida
     }
 
@@ -21,11 +25,12 @@ public class Personaje {
         System.out.println(this.nombre + " ataca a " + oponente.getNombre() + " causado " + dano + "puntos de dano.");
     }
 
+
     // Metodo para recibir dano
     public void recibirDano(int dano) {
         this.puntosDeVida -= dano;
         if (this.puntosDeVida < 0) {
-            this.puntosDeVida = 0; // No se puede tener menos de 0 ountos de vida
+            this.puntosDeVida = 0; // No se puede tener menos de 0 puntos de vida
         }
     }
 
@@ -43,4 +48,5 @@ public class Personaje {
     public int getpuntosDeVida() {
         return this.puntosDeVida;
     }
+
 }
